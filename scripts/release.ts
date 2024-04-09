@@ -2,10 +2,10 @@ import { release } from '@vitejs/release-scripts'
 import { logRecentCommits } from './releaseUtils'
 
 release({
-  repo: 'vite',
-  packages: ['vite', 'create-vite', 'plugin-legacy'],
-  toTag: (pkg, version) =>
-    pkg === 'vite' ? `v${version}` : `${pkg}@${version}`,
+  repo: 'aurora-test2',
+  packages: ['aurora-test2'],
+  toTag: (pkg, version) => `v${version}`,
+  getPkgDir: (pkg) => ".",
   logChangelog: (pkg) => logRecentCommits(pkg),
   generateChangelog: async (pkgName) => {
   },
