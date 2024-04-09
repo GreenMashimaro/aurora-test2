@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "ci-publish": "release --ci"
+    "ci-publish": "release-it --ci"
   },
   "keywords": [],
   "author": "",
